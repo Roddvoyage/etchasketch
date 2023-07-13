@@ -9,23 +9,10 @@
     <script src="javascript.js" defer></script>
 </head>
 <body>
-    <div class='grid'>
-        <form id="sizePicker">
-            height:
-            <input type="number" id="inputHeight" name="'height" min="0" value="0">
-            weight:
-            <input type="number" id="inputWeight" name="weight" min="0" value="0">
-            <input type="submit">
-        </form>
-        <h1> Pick A Color</h2>
-            <input type="color" id="colorPicker">
-        
-            <h2>Deisgn Canvas</h2>
-            <table id="'pixelCanvas"></table>
-
-
-        
+    <div id='grid'>
+        <input type="number" id="height" min="0" value="0">
+        <input type='number' id="width" min="0" value="0">
+        <input type="submit" onclick="makeGrid(rows, cols)">
     </div>
-    
 </body>
 </html>
